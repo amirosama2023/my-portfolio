@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Osama | Elite Full-Stack Developer</title>
+    <title>Amir Moghafil | Elite Full-Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -335,7 +335,44 @@
             color: transparent;
             text-decoration: none;
         }
-        
+        /* Courses Section Styles */
+.course-stats {
+    display: grid;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.course-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-stat span:first-child {
+    opacity: 0.8;
+}
+
+.course-stat span:last-child {
+    font-weight: 600;
+}
+
+.rating-stars {
+    color: var(--primary);
+    margin-left: 0.3rem;
+}
+
+.course-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.course-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+}
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -473,13 +510,17 @@
             .hero::before {
                 animation: none;
             }
+            .my-photo{
+                display: none;
+            }
+            
         }
     </style>
 </head>
 <body>
     <!-- شريط التنقل -->
     <nav class="navbar" id="navbar">
-        <a href="#" class="logo">AMIR_OSAMA</a>
+        <a href="#" class="logo">AMIR_MOGHAFIL</a>
         <div class="nav-links">
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
@@ -494,7 +535,7 @@
             <span class="typing-text" id="typing"></span>
         </h1>
         <p data-aos="fade-up" data-aos-delay="400">
-            Elite Full-Stack Developer & Cybersecurity Specialist creating high-performance web applications with cutting-edge technologies.
+Elite Full-Stack Developer & Web Systems Specialist creating high-performance web applications with cutting-edge technologies.
         </p>
         <div data-aos="fade-up" data-aos-delay="600" style="display: flex; gap: 1rem;">
             <a href="#projects" class="btn btn-primary">
@@ -512,26 +553,26 @@
         <h2 class="section-title" data-aos="fade-right">About Me</h2>
         <div class="glass-card" data-aos="fade-up" data-aos-delay="200" style="padding: 3rem; max-width: 1000px;">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-                <div>
+                <div class="sec1">
                     <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent;">
                         The Developer Behind The Code
                     </h3>
                     <p style="margin-bottom: 1rem;">
-                        I'm Amir Osama, a passionate Full-Stack Developer with over 5 years of experience in crafting exceptional digital experiences. My journey began when I wrote my first line of code at the age of 15, and since then, I've been obsessed with creating efficient, secure, and visually stunning applications.
+                        I'm Amir Moghafil, a passionate Full-Stack Developer with over 5 years of experience in crafting exceptional digital experiences. My journey began when I wrote my first line of code at the age of 18, and since then, I've been obsessed with creating efficient, secure, and visually stunning applications.
                     </p>
                     <p style="margin-bottom: 1.5rem;">
                         With a hacker mindset, I approach problems creatively and find innovative solutions. I thrive in challenging environments and love to push boundaries of what's possible with code.
                     </p>
-                    <div style="display: flex; gap: 1rem;">
+                    <!-- <div style="display: flex; gap: 1rem;">
                         <a href="#" class="btn btn-primary">
                             <i class="fas fa-download"></i> Download CV
                         </a>
-                    </div>
+                    </div> -->
                 </div>
-                <div style="position: relative;">
+                <div class="sec2" style="position: relative;">
                     <div style="width: 100%; aspect-ratio: 1/1; background: var(--gradient); border-radius: 15px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                         <!-- يمكنك استبدال هذا بقاعدة صورة شخصية -->
-                        <i class="fas fa-user-secret" style="font-size: 5rem; color: var(--dark);"></i>
+                        <img class="my-photo" width="300px" src="img.jpg" alt="">
                     </div>
                     <div style="position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark); font-weight: bold;">
                         5+ Y
@@ -544,120 +585,282 @@
     <!-- قسم المهارات -->
     <section id="skills">
         <h2 class="section-title" data-aos="fade-right">My Expertise</h2>
-        <div class="skills-container">
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Semantic Markup, Accessibility</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="150">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Animations, Flexbox, Grid</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>ES6+, Async, DOM</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="250">
-                <i class="fab fa-react"></i>
-                <h3>React</h3>
-                <p>Hooks, Context, Redux</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fab fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Express, REST APIs</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="350">
-                <i class="fas fa-database"></i>
-                <h3>Databases</h3>
-                <p>MongoDB, SQL, Firebase</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="400">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Security</h3>
-                <p>OWASP, Pen Testing</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="450">
-                <i class="fas fa-code-branch"></i>
-                <h3>Git</h3>
-                <p>Version Control, CI/CD</p>
-            </div>
-        </div>
+       <div class="skills-container">
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Semantic Markup, Accessibility</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="150">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, Animations</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>ES6+, Async/Await, DOM</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="250">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <p>Hooks, Context, Redux</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fab fa-bootstrap"></i>
+        <h3>Bootstrap</h3>
+        <p>Components, Grid System</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="350">
+        <i class="fas fa-wind"></i>
+        <h3>Tailwind CSS</h3>
+        <p>Utility-First, Responsive Design</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+        <p>OOP, MVC, REST APIs</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="450">
+        <i class="fab fa-laravel"></i>
+        <h3>Laravel</h3>
+        <p>Blade, Eloquent, Routing</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-database"></i>
+        <h3>MySQL</h3>
+        <p>Joins, Indexing, Optimization</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="550">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+        <p>Branching, Merging, Workflow</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="600">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Repositories, Pull Requests, Actions</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="650">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Security</h3>
+        <p>OWASP, Input Validation, Pen Testing</p>
+    </div>
+    <div class="glass-card skill-card" data-aos="fade-up" data-aos-delay="700">
+        <i class="fas fa-project-diagram"></i>
+        <h3>System Analysis</h3>
+        <p>UML, ERD, Requirement Analysis</p>
+    </div>
+</div>
+
     </section>
     
     <!-- قسم المشاريع -->
     <section id="projects">
         <h2 class="section-title" data-aos="fade-right">Featured Work</h2>
-        <div class="projects-grid">
-            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Secure Authentication System</h3>
-                <p>A cutting-edge auth system with biometric login, multi-factor authentication, and advanced brute-force protection mechanisms.</p>
-                <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                    <li>JWT token authentication</li>
-                    <li>Rate limiting and IP blocking</li>
-                    <li>Activity monitoring dashboard</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">MongoDB</span>
-                    <span class="tag">JWT</span>
+<div class="projects-grid">
+    <!-- Project 5 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Fire Prediction System</h3>
+        <p>IoT-based platform to detect fires early through sensor data, visualized with real-time alerts and admin management.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Live temperature & smoke tracking</li>
+            <li>Email notifications</li>
+            <li>Data dashboard</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap</span>
+        </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="650">
+        <h3>Lorex Watch Store</h3>
+        <p>Elegant e-commerce website for luxury watches, with search filters, checkout process, and admin dashboard.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Product filtering & cart system</li>
+            <li>Stock and order management</li>
+            <li>Mobile-friendly UI</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Tailwind CSS</span>
+        </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="700">
+        <h3>Anwar Quranic School System</h3>
+        <p>Custom web app for managing Quran memorization centers with student tracking, scheduling, and progress reports.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Student performance reports</li>
+            <li>Multi-role user system</li>
+            <li>Attendance tracking</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap</span>
+        </div>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="750">
+        <h3>Audit Job Board</h3>
+        <p>Job portal where users can search and apply for jobs, upload resumes, and track applications via dashboards.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Filterable job listings</li>
+            <li>User login and profile</li>
+            <li>CV upload & job tracking</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Tailwind CSS</span>
+        </div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="800">
+        <h3>Churchill News Platform</h3>
+        <p>Multi-author blog with article management, categories, and user comments. Built with security and SEO in mind.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Category & tag system</li>
+            <li>Secure admin panel</li>
+            <li>Interactive comment system</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap</span>
+        </div>
+    </div>
+
+    <!-- Project 10 -->
+    <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="850">
+        <h3>O2 Restaurant Website</h3>
+        <p>A responsive website for a modern restaurant, featuring an online menu, table reservations, and animations.</p>
+        <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Interactive food menu</li>
+            <li>Reservation form</li>
+            <li>Smooth scroll and animations</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+    <!-- Training Courses Section -->
+<!-- Training Courses Section -->
+<section id="courses">
+    <h2 class="section-title" data-aos="fade-right">Training Courses</h2>
+    <p data-aos="fade-up" style="margin-bottom: 2rem; opacity: 0.9;">
+        Courses I personally designed and taught to help developers level up their skills
+    </p>
+    <div class="projects-grid">
+        <!-- Course 1 -->
+        <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Web Development Fundamentals</h3>
+            <p>Comprehensive introduction to web development from zero to building complete websites</p>
+            <div class="course-stats">
+                <div class="course-stat">
+                    <span>Students trained</span>
+                    <span>120+</span>
+                </div>
+                <div class="course-stat">
+                    <span>Course duration</span>
+                    <span>40 hours</span>
+                </div>
+                <div class="course-stat">
+                    <span>Rating</span>
+                    <span class="rating-value">4.9</span>
                 </div>
             </div>
-            
-            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="300">
-                <h3>E-Commerce Platform</h3>
-                <p>Full-featured online store with payment integration, inventory management, and AI-powered recommendations.</p>
-                <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                    <li>Stripe & PayPal integration</li>
-                    <li>Real-time analytics</li>
-                    <li>Admin dashboard</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Redux</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Stripe API</span>
+            <div class="course-meta">
+                <div class="course-meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Last taught: Jun 2023</span>
                 </div>
             </div>
-            
-            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="400">
-                <h3>Network Security Tool</h3>
-                <p>Comprehensive network scanner with vulnerability detection, port scanning, and detailed reporting.</p>
-                <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                    <li>Real-time threat detection</li>
-                    <li>Custom reporting engine</li>
-                    <li>API for integration</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Socket</span>
-                    <span class="tag">Nmap</span>
-                    <span class="tag">React</span>
-                </div>
-            </div>
-            
-            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="500">
-                <h3>Task Management System</h3>
-                <p>Productivity platform with team collaboration, time tracking, and AI-powered task prioritization.</p>
-                <ul style="padding-left: 1.5rem; margin-top: 1rem;">
-                    <li>Real-time updates</li>
-                    <li>Role-based access</li>
-                    <li>Mobile responsive</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">Firebase</span>
-                    <span class="tag">WebSockets</span>
-                    <span class="tag">AI</span>
-                </div>
+            <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
             </div>
         </div>
-    </section>
-    
+
+        <!-- Course 2 -->
+        <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Modern Frontend with React</h3>
+            <p>Master React.js, hooks, context API and modern frontend development practices</p>
+            <div class="course-stats">
+                <div class="course-stat">
+                    <span>Students trained</span>
+                    <span>85+</span>
+                </div>
+                <div class="course-stat">
+                    <span>Course duration</span>
+                    <span>50 hours</span>
+                </div>
+                <div class="course-stat">
+                    <span>Rating</span>
+                    <span class="rating-value">4.8</span>
+                </div>
+            </div>
+            <div class="course-meta">
+                <div class="course-meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Last taught: Aug 2024</span>
+                </div>
+            </div>
+            <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Redux</span>
+                <span class="tag">Tailwind</span>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Backend Development with Laravel</h3>
+            <p>Build robust backend systems with Laravel PHP framework and MySQL</p>
+            <div class="course-stats">
+                <div class="course-stat">
+                    <span>Students trained</span>
+                    <span>65+</span>
+                </div>
+                <div class="course-stat">
+                    <span>Course duration</span>
+                    <span>60 hours</span>
+                </div>
+                <div class="course-stat">
+                    <span>Rating</span>
+                    <span class="rating-value">4.95</span>
+                </div>
+            </div>
+            <div class="course-meta">
+                <div class="course-meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Last taught: Oct 2023</span>
+                </div>
+            </div>
+            <div class="tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- قسم التواصل -->
     <section id="contact">
         <div class="contact-container">
@@ -693,18 +896,16 @@
             </div>
             
             <div class="contact-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="mailto:amir@example.com" class="contact-link" title="Email">
+                <a href="mailto:amirmoghafil@gmail.com" class="contact-link" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://github.com/amirosama" target="_blank" class="contact-link" title="GitHub">
+                <a href="https://amirosama2023.github.io/my-portfolio/" target="_blank" class="contact-link" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/amirosama" target="_blank" class="contact-link" title="LinkedIn">
+                <a href="https://linkedin.com/in/amirMoghafil" target="_blank" class="contact-link" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://twitter.com/amir_osama" target="_blank" class="contact-link" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                
                 <a href="https://wa.me/1234567890" target="_blank" class="contact-link" title="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
@@ -716,7 +917,7 @@
         // تأثير الكتابة
         const typingText = document.getElementById('typing');
         const phrases = [
-            "Amir Osama", 
+            "Amir Moghafil", 
             "Full-Stack Web Developer"
     
         ];
@@ -774,7 +975,48 @@
                 }
             });
         });
-        
+        // Course rating stars animation
+function initCourseRatings() {
+    document.querySelectorAll('.project-card').forEach(card => {
+        const ratingElement = card.querySelector('.rating-value');
+        if (ratingElement) {
+            const rating = parseFloat(ratingElement.textContent);
+            const starsContainer = document.createElement('span');
+            starsContainer.className = 'rating-stars';
+            
+            // Create stars based on rating
+            for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('i');
+                star.className = 'fas fa-star';
+                
+                // Full star
+                if (i <= Math.floor(rating)) {
+                    star.style.opacity = 1;
+                } 
+                // Half star
+                else if (i - 0.5 <= rating) {
+                    star.className = 'fas fa-star-half-alt';
+                }
+                // Empty star
+                else {
+                    star.style.opacity = 0.3;
+                }
+                
+                starsContainer.appendChild(star);
+            }
+            
+            ratingElement.parentNode.insertBefore(starsContainer, ratingElement.nextSibling);
+        }
+    });
+}
+
+// Update your existing load event listener
+window.addEventListener('load', () => {
+    type();
+    initAOS();
+    initCourseRatings(); // Add this line
+    document.querySelector('.nav-link').classList.add('active');
+});
         // التنقل السلس
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
